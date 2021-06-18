@@ -1,0 +1,36 @@
+{% extends 'base.html' %}  
+  
+
+{% block body %}
+
+<section>
+    <label class="t1">Transactions Detail</label>
+    <table class="table1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Amt Debited</th>
+                <th>Amt Credited</th>
+                <th>Acc. Bal</th>
+            </tr>
+        </thead>
+        <body>
+            {% for i in trans %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.deb_amt}}</td>
+                <td>{{i.cr_amt}}</td>
+                <td>{{i.ac_bal}}₹</td>
+            </tr>
+            {% endfor %}
+        </body>
+
+    </table>
+    <label id="Refresh"><a href="trans">Refresh</a></label>
+</section>
+   
+{% endblock body %}

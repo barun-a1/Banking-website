@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% load static %}
+
+{% block body%}
+
+
+
+<section>
+    <label class="t1">Customers Detail</label>
+    <table class="table1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Acc. Bal</th>
+            </tr>
+        </thead>
+
+        <body>
+            {% for i in customers %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.avail_bal}}₹</td>
+            </tr>
+            {% endfor %}
+        </body>
+
+    </table>
+</section>
+
+
+{% endblock body %}
