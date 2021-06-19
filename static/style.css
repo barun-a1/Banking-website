@@ -130,7 +130,8 @@ a.active,a:hover{
 }
 .t1{
 	
-	color: black;
+	color: red;
+	position:center;
 	font-size: 30px;
 	line-height: 50px;
 	padding-left: 50px;
@@ -140,12 +141,7 @@ a.active,a:hover{
 	position:center;
 	border-collapse: collapse;
 	padding-right: 5px;
-	padding-left: 50px;
-	margin: 25px ;
-	font-size: 1.3em;
-	min-width: 800px;
-	border-radius: 5px 5px 0 0;
-	overflow: hidden;
+	padding-left: 5px;
 	box-shadow: 0 0 20px rbga(0, 0, 0, 0.15);
 }
 .table1 thead tr{
